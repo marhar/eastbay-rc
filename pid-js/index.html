@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>PID</title>
+</head>
+<body>
+	<div>
+		<label>P-Gain</label><input type="number" step="0.05" placeholder="P_Gain" value="0.5">
+		<label>I-Gain</label><input type="number" step="0.05" placeholder="I_Gain" value="0">
+		<label>D-Gain</label><input type="number" step="0.05" placeholder="D_Gain" value="0">
+	</div>
+	<canvas id="canvas"></canvas>
+	<div id="copter-y"></div>
+	<div id="copter-thr"></div>
+	<script src="Copter.js"></script>
+	<script src="PIDController.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>

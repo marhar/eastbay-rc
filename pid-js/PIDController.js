@@ -1,0 +1,28 @@
+function PIDController(kp, ki, kd) {
+	this.kp = kp;
+	this.ki = ki;
+	this.kd = kd;
+	this.errorPos = 0;
+	this.lastError = 0;
+	this.errorSum = 0;
+
+	this.maxCorr = 100;
+	this.minCorr = 0;
+}
+
+PIDController.prototype.update = function(currentPos, targetPos) {
+	this.errorPos = currentPos - targetPos;
+	this.errorSum += this.errorPos;
+
+	var correction = (this.errorPos * this.kp) + (this.errorSum * this.ki) + ((this.errorPos - this.lastError) * this.kd);
+	correction = this.errorPos * this.kp;
+
+	if (correction > this.maxCorr) {
+		correction = this.maxCorr;
+	} else if (correction < this.minCorr) {
+		correction = this.minCorr;
+	}
+
+	this.lastError = this.errorPos;
+	return correction;
+};
