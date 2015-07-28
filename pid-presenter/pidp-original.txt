@@ -1,0 +1,60 @@
+The EastBay RC Guide to
+Understanding PID Controllers
+   (in 7 Intuitive Steps)
+
+
+
+
+
+
+
+      Mark Harrison
+      http://eastbay-rc.com
+>
+The EastBay RC Guide to
+Understanding PID Controllers
+   (in 7 Intuitive Steps)
+
+1. What's a PID???
+2. The Control Loop
+3. P - Proportional
+    "Immediate" Correction
+4. I - Integral
+    "Over Time" Correction
+5. PID Values ("Coefficients")
+6. D - Derivative
+    "Take It Easy" Correction
+7. PID Tuning
+>
+1. What's a PID???
+>
+img pid-wiki1
+>
+img pid-wiki2
+>
+1. What's a PID???
+>
+2. The Control Loop
+>
+img pid-loop
+>
+3. P - Proportional "Immediate" Correction
+
+"proportional" correction
+
+"The farther off you are, the bigger
+correction you make, i.e. proportional."
+
+>
+4. I - Integral "Over Time" Correction
+
+"steady state" correction
+
+"Have we been failing to make progress
+correcting?  Add a little bit more correction."
+>
+5. PID Values ("Coefficients")
+>
+6. D - Derivative "Take It Easy" Correction
+>
+7. PID Tuning
